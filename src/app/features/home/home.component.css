@@ -1,0 +1,22 @@
+h1 {
+    padding-top: 30px;
+    font-size: 46px;
+}
+
+.des {
+    padding: 16px 0 0 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.manage {
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    font-weight: 500;
+}
