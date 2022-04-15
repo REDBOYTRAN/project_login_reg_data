@@ -9,7 +9,7 @@ const usersModule = () => import('./features/users/users.module').then(x => x.Us
 const dataModule = () => import('./features/table/table.module').then(x => x.TableModule);
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
     { path: 'users', loadChildren: usersModule, canActivate: [AuthGuard] },
     { path: 'account', loadChildren: accountModule },
     { path: 'data', loadChildren: dataModule, canActivate: [AuthGuard]},
