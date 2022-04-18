@@ -31,7 +31,6 @@ export class DataService {
       });
   }
 
-  // DEMO ONLY, you can find working methods below
   addIssue (issue: Issue): void {
     this.dialogData = issue;
   }
