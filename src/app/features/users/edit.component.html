@@ -1,5 +1,4 @@
-﻿<!-- <h1 *ngIf="isAddMode">Add User</h1> -->
-<h1 *ngIf="!isAddMode">Edit User</h1>
+﻿<h1>Edit User</h1>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-row">
         <div class="form-group col">
@@ -28,7 +27,7 @@
         <div class="form-group col">
             <label for="password">
                 Password
-                <em *ngIf="!isAddMode">(Leave blank to keep the same password)</em>
+                <em>(Leave blank to keep the same password)</em>
             </label>
             <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
             <div *ngIf="submitted && f.password.errors" class="invalid-feedback">

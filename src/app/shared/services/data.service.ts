@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 import { Issue } from '@app/shared/models/issue';
-// import {Issue} from '../../shared/models/issue';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 
 @Injectable()
